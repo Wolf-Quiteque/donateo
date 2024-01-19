@@ -62,78 +62,85 @@
 	// Scrollax
    $.Scrollax();
 
-	var carousel = function() {
-		$('.home-slider').owlCarousel({
-	    loop:true,
-	    autoplay: true,
-	    margin:0,
-	    animateOut: 'fadeOut',
-	    animateIn: 'fadeIn',
-	    nav:false,
-	    dots: false,
-	    autoplayHoverPause: false,
-	    items: 1,
-	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
-	    responsive:{
-	      0:{
-	        items:1
-	      },
-	      600:{
-	        items:1
-	      },
-	      1000:{
-	        items:1
-	      }
-	    }
-		});
-		$('.carousel-testimony').owlCarousel({
-			autoplay: true,
-			loop: true,
-			items:1,
-			margin: 0,
-			stagePadding: 0,
-			nav: false,
-			navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
-			responsive:{
-				0:{
-					items: 1
-				},
-				600:{
-					items: 1
-				},
-				1000:{
-					items: 1
-				}
-			}
-		});
-
-		$('.single-slider').owlCarousel({
-			animateOut: 'fadeOut',
-	    animateIn: 'fadeIn',
-			autoplay: true,
-			loop: true,
-			items:1,
-			margin: 0,
-			stagePadding: 0,
-			nav: true,
-			dots: true,
-			navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
-			responsive:{
-				0:{
-					items: 1
-				},
-				600:{
-					items: 1
-				},
-				1000:{
-					items: 1
-				}
-			}
-		});
-
-	};
-	carousel();
-
+   var carousel = function () {
+	$('.home-slider').owlCarousel({
+	  loop: true,
+	  autoplay: true,
+	  margin: 0,
+	  animateOut: 'fadeOut',
+	  animateIn: 'fadeIn',
+	  nav: false,
+	  dots: false,
+	  autoplayHoverPause: false,
+	  items: 1,
+	  navText: ["<span class='ion-md-arrow-back'></span>", "<span class='ion-chevron-right'></span>"],
+	  touchDrag: true,
+	  mouseDrag: true,
+	  responsive: {
+		0: {
+		  items: 1
+		},
+		600: {
+		  items: 1
+		},
+		1000: {
+		  items: 1
+		}
+	  }
+	});
+  
+	$('.carousel-testimony').owlCarousel({
+	  autoplay: true,
+	  loop: true,
+	  items: 1,
+	  margin: 0,
+	  stagePadding: 0,
+	  nav: false,
+	  navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
+	  touchDrag: true,
+	  mouseDrag: true,
+	  responsive: {
+		0: {
+		  items: 1
+		},
+		600: {
+		  items: 1
+		},
+		1000: {
+		  items: 1
+		}
+	  }
+	});
+  
+	$('.single-slider').owlCarousel({
+	  animateOut: 'fadeOut',
+	  animateIn: 'fadeIn',
+	  autoplay: true,
+	  loop: true,
+	  items: 1,
+	  margin: 0,
+	  stagePadding: 0,
+	  nav: true,
+	  dots: true,
+	  navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
+	  touchDrag: true,
+	  mouseDrag: true,
+	  responsive: {
+		0: {
+		  items: 1
+		},
+		600: {
+		  items: 1
+		},
+		1000: {
+		  items: 1
+		}
+	  }
+	});
+  };
+  
+  carousel();
+  
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
 		// 	 timer;
